@@ -1,0 +1,24 @@
+/usr/local/opencv/3.3.1/include/opencv2/stitching/detail/warpers.hpp(213): warning: overloaded virtual function "cv::detail::PlaneWarper::buildMaps" is only partially overridden in class "cv::detail::AffineWarper"
+
+/usr/local/opencv/3.3.1/include/opencv2/stitching/detail/warpers.hpp(213): warning: overloaded virtual function "cv::detail::PlaneWarper::warp" is only partially overridden in class "cv::detail::AffineWarper"
+
+/usr/local/opencv/3.3.1/include/opencv2/videostab/motion_stabilizing.hpp(106): warning: function "cv::videostab::IMotionStabilizer::stabilize(int, const std::vector<cv::Mat, std::allocator<cv::Mat>> &, std::pair<int, int>, cv::Mat *)" is hidden by "cv::videostab::GaussianMotionFilter::stabilize" -- virtual function override intended?
+
+kernel.cu(168): warning: integer conversion resulted in truncation
+
+/usr/local/opencv/3.3.1/include/opencv2/flann/lsh_table.h(220): warning: statement is unreachable
+
+/usr/local/opencv/3.3.1/include/opencv2/flann/lsh_table.h(225): warning: statement is unreachable
+
+/usr/local/opencv/3.3.1/include/opencv2/flann/lsh_table.h(234): warning: statement is unreachable
+
+/usr/local/opencv/3.3.1/include/opencv2/flann/index_testing.h(248): warning: variable "p1" was set but never used
+
+/usr/local/opencv/3.3.1/include/opencv2/stitching/detail/warpers.hpp(213): warning: overloaded virtual function "cv::detail::PlaneWarper::buildMaps" is only partially overridden in class "cv::detail::AffineWarper"
+
+/usr/local/opencv/3.3.1/include/opencv2/stitching/detail/warpers.hpp(213): warning: overloaded virtual function "cv::detail::PlaneWarper::warp" is only partially overridden in class "cv::detail::AffineWarper"
+
+/usr/local/opencv/3.3.1/include/opencv2/videostab/motion_stabilizing.hpp(106): warning: function "cv::videostab::IMotionStabilizer::stabilize(int, const std::vector<cv::Mat, std::allocator<cv::Mat>> &, std::pair<int, int>, cv::Mat *)" is hidden by "cv::videostab::GaussianMotionFilter::stabilize" -- virtual function override intended?
+
+kernel.cu(168): warning: integer conversion resulted in truncation
+

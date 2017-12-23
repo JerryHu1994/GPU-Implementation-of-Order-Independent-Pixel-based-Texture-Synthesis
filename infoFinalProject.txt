@@ -1,0 +1,11 @@
+Your First Name: Jieru
+Your Last Name: Hu
+The Last four digits of your UW-Madison student ID: 4544
+URL to Final Project GitHub repo (used for grading): https://github.com/UW-Madison-759/759--JerryHu1994/tree/master/Project
+Participate in Rescale competition for Surface tablet: Yes
+Name[s] of your Final Project teammates: Jieru Hu (Just myself)
+I took care of the course evaluation: Yes
+
+NOTE: It's ok for a team to only generate one Final Report. However, this same document should show up in the Final Project folder of each team member.
+
+P.S. I obviously can't check if you evaluated the course. But I thought I'd ask anyway and see how you spin it.

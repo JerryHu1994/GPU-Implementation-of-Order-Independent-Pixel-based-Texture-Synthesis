@@ -1,0 +1,90 @@
+g++ -c utils.cpp utils.h  `pkg-config --cflags --libs opencv`
+g++ -c ts_gpu.cpp ts_gpu.cpp  `pkg-config --cflags --libs opencv` -I /usr/local/cuda/include
+nvcc -c kernel.cu -I /usr/local/cuda/include -O3 -ccbin "/usr/local/gcc/6.4.0/bin/gcc"
+nvcc -o ts_gpu utils.o ts_gpu.o kernel.o  `pkg-config --cflags --libs opencv` -I /usr/local/cuda/include -ccbin "/usr/local/gcc/6.4.0/bin/gcc"
+Output Size: 400
+Number of levels: 3
+Neighborhood Size: 11
+Size Ratio between levels2
+
+Iterations: 3
+Converting RGB image to greyscale image... 
+Input Texture height : 100 columns : 100
+Initial Ratio: 0.396
+The initial Size is 110
+Start seeding...
+Start randomize the inital texture...
+Start synthesizing the 0 level
+Start seeding for random candidates...
+Start randomize the candidate pixel selection...
+Perform synthesizing at level 0 iteration 0 Pixel pool size: 25: Input size: 110 output size: 100
+GridSize :4 4
+Time spent: 2.54829
+
+Upscaling the texture to next level: Original Size: 100 After Size: 110
+
+Start seeding for random candidates...
+Start randomize the candidate pixel selection...
+Perform synthesizing at level 0 iteration 1 Pixel pool size: 25: Input size: 110 output size: 100
+GridSize :4 4
+Time spent: 2.54272
+
+Upscaling the texture to next level: Original Size: 100 After Size: 110
+
+Start seeding for random candidates...
+Start randomize the candidate pixel selection...
+Perform synthesizing at level 0 iteration 2 Pixel pool size: 25: Input size: 110 output size: 100
+GridSize :4 4
+Time spent: 2.53568
+
+Upscaling the texture after level 0 From size 100 to 210
+Start synthesizing the 1 level
+Start seeding for random candidates...
+Start randomize the candidate pixel selection...
+Perform synthesizing at level 1 iteration 0 Pixel pool size: 50: Input size: 210 output size: 200
+GridSize :7 7
+Time spent: 52.1978
+
+Upscaling the texture to next level: Original Size: 200 After Size: 210
+
+Start seeding for random candidates...
+Start randomize the candidate pixel selection...
+Perform synthesizing at level 1 iteration 1 Pixel pool size: 50: Input size: 210 output size: 200
+GridSize :7 7
+Time spent: 52.2116
+
+Upscaling the texture to next level: Original Size: 200 After Size: 210
+
+Start seeding for random candidates...
+Start randomize the candidate pixel selection...
+Perform synthesizing at level 1 iteration 2 Pixel pool size: 50: Input size: 210 output size: 200
+GridSize :7 7
+Time spent: 52.1125
+
+Upscaling the texture after level 1 From size 200 to 410
+Start synthesizing the 2 level
+Start seeding for random candidates...
+Start randomize the candidate pixel selection...
+Perform synthesizing at level 2 iteration 0 Pixel pool size: 100: Input size: 410 output size: 400
+GridSize :13 13
+Time spent: 747.034
+
+Upscaling the texture to next level: Original Size: 400 After Size: 410
+
+Start seeding for random candidates...
+Start randomize the candidate pixel selection...
+Perform synthesizing at level 2 iteration 1 Pixel pool size: 100: Input size: 410 output size: 400
+GridSize :13 13
+Time spent: 742.425
+
+Upscaling the texture to next level: Original Size: 400 After Size: 410
+
+Start seeding for random candidates...
+Start randomize the candidate pixel selection...
+Perform synthesizing at level 2 iteration 2 Pixel pool size: 100: Input size: 410 output size: 400
+GridSize :13 13
+Time spent: 744.49
+
+Start filtering for the ouput
+Total time spent: 2421.85
+Free the pyramids image done
